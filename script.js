@@ -1,4 +1,4 @@
-function initMap() {
+window.initMap = function() {
     const map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: -34.6037, lng: -58.3816 },
         zoom: 10,
@@ -18,4 +18,4 @@ function initMap() {
             title: area.name,
         });
     });
-}
+};
