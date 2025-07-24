@@ -12,7 +12,7 @@ window.initMap = function() {
     ];
 
     areas.forEach(area => {
-        new google.maps.Marker({
+        new google.maps.marker.AdvancedMarkerElement({
             position: { lat: area.lat, lng: area.lng },
             map: map,
             title: area.name,
